@@ -1,0 +1,961 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: iransans-bold;
+  src: url("/assets/font/IRANSansDN-Bold.ttf");
+}
+@font-face {
+  font-family: iransans;
+  src: url("/assets/font/IRANSANS_MEDIUM.TTF");
+}
+
+body {
+  background-color: #d9d9d9;
+  direction: rtl;
+  font-family: iransans !important;
+  margin: 0;
+}
+.container {
+  max-width: 1500px;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+}
+
+.header {
+  width: 100%;
+  background-color: #11b482;
+  height: 120px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.shapeWrapper {
+  position: relative;
+  height: 100%;
+}
+
+.shape {
+  position: absolute;
+  bottom: -1px;
+  width: 300px;
+}
+
+.shape img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.video-and-register {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-register-wrapper {
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.main-video {
+  /* width: 385px; */
+  max-width: 450px;
+  margin: 0 auto;
+  background: white;
+  box-shadow: 4px 5px 7px 2px rgb(180, 180, 180);
+  padding: 12px;
+  border-radius: 10px;
+}
+.main-video video {
+  width: 100%;
+  border-radius: 10px;
+  outline: none;
+}
+.first-box .number span {
+  color: black;
+}
+.box .number span {
+  color: white;
+}
+
+.first-box .texts {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.first-box .white {
+  color: white;
+}
+
+.first-box .white.register input {
+  box-shadow: none;
+}
+.register {
+  padding-top: 10px;
+}
+
+.first-box .register input {
+  box-shadow: 4px 5px 7px 2px rgb(180, 180, 180);
+}
+
+.services {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hamvakil-services {
+  width: 80%;
+  height: 300px;
+  background-color: white;
+  margin: 40px 0;
+  border-radius: 11px;
+  box-shadow: 4px 5px 7px 2px rgb(180, 180, 180);
+  display: flex;
+  justify-content: space-around;
+}
+
+.second-benefite-title {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.benefite-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #11b482;
+  border-radius: 12px;
+  height: 46px;
+  margin-top: 20px;
+  display: none;
+}
+
+.second-benefite-title .title span {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0 0;
+}
+
+.green-square {
+  width: 12px;
+  height: 12px;
+  background-color: #11b482;
+  border-radius: 50%;
+  margin: 0 13px;
+}
+
+.benefits {
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 18px;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.benefit {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 15px;
+}
+
+.main-logo img {
+  height: 190px;
+  width: 190px;
+}
+
+.benefit span {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.register-number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.green-box {
+  background-color: #11b482;
+  box-shadow: 4px 5px 7px 2px rgb(180, 180, 180);
+  width: 80%;
+  height: 350px;
+  border-radius: 11px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.green-box .image {
+  width: 350px;
+  height: 230px;
+}
+
+.green-box .image img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 4px 4px 7px 0px rgb(114, 114, 114);
+}
+.number {
+  text-align: center;
+  /* height: 70px; */
+}
+.number span {
+  font-size: 23px;
+  margin: 2px 0;
+  word-spacing: -1px;
+}
+
+.register {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.register input {
+  height: 54px;
+  width: 330px;
+  border: none;
+  outline: none;
+  background-color: #f1f1f1;
+  border-radius: 12px;
+  direction: ltr;
+  padding-inline-start: 15px;
+  padding-inline-end: 15px;
+  flex: 1;
+  /* margin-top: -10px; */
+}
+
+.register button {
+  border: none;
+  outline: none;
+  position: absolute;
+  background-color: #11b482;
+  color: white;
+  width: 50px;
+  height: 48px;
+  border-radius: 13px;
+  font-size: 25px;
+  inset-inline-start: 1%;
+  flex: 1;
+  cursor: pointer;
+  transition: 0.2s all;
+}
+
+.register button:hover {
+  background-color: #009468;
+}
+
+.best-lawyers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  flex-direction: column;
+}
+
+.best-lawyers-title {
+  margin-block: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.best-lawyers-title span {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.mySwiper {
+  width: 100%;
+  /* height: 410px; */
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+
+.card .name {
+  display: flex;
+  align-items: center;
+}
+
+.card .name .circle {
+  width: 19px;
+  height: 21px;
+  background-color: #11b482;
+  border-radius: 50%;
+}
+
+.card .name .circle span {
+  color: #ffffff !important;
+  font-size: 20px;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+.rounded-3xl {
+  border-radius: 1.5rem;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  border-radius: 10px;
+
+  position: relative;
+  box-shadow: 5px 4px 6px 0px rgb(196, 196, 196);
+  padding-bottom: 30px;
+
+  border-radius: 20px;
+  overflow: hidden;
+  user-select: none;
+}
+
+.green-box-slider {
+  width: 100%;
+  background-color: #11b482;
+  height: 40px;
+  margin-bottom: 15px;
+  border-radius: 0;
+}
+
+.card {
+  /* height: 290px; */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-inline-start: 6px;
+  margin-inline-end: 4px;
+}
+
+.name {
+  padding-block: 15px 5px;
+  font-weight: 700;
+}
+
+.card .name .circle {
+  width: 17px;
+  height: 17px;
+  background-color: #11b482;
+  border-radius: 58%;
+  margin-inline-end: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper-slide .photo {
+  border: 6px solid rgb(204, 204, 204);
+  width: 120px;
+  height: 122px;
+  border-radius: 11px;
+}
+
+.swiper-slide .photo img {
+  width: 97%;
+  height: 97%;
+  padding: 5px 0;
+  object-fit: contain;
+}
+
+.detail-lawyer span {
+  color: #404040;
+  font-size: 10px !important;
+  font-weight: 700;
+}
+.detail-lawyer p {
+  font-size: 16px;
+}
+
+footer {
+  background-color: #2d2d2d;
+  height: 300px;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-items {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100% !important;
+}
+
+.hamvakil-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hamvakil-logo img {
+  width: 215px;
+}
+
+.logoes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  max-width: 80px;
+  margin-inline-start: 11px;
+  margin-inline-end: 11px;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.badge {
+  background-color: #11b482;
+  color: white;
+  padding: 5px;
+  border-radius: 10px;
+  width: 112px;
+}
+
+.links {
+  margin: 12px 9px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.link {
+  margin: 2px 0;
+}
+
+.link a {
+  text-decoration: none;
+  color: white;
+  transition: all 0.2s;
+}
+
+.link a:hover {
+  color: #d3d3d3;
+}
+
+.links-group .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: max-content;
+  margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+  .box {
+    width: 50%;
+  }
+
+  .header {
+    height: 70px;
+  }
+
+  .shape {
+    width: 275px;
+  }
+  .first-box {
+    width: 50%;
+  }
+  .video {
+    width: 50%;
+  }
+  .main-video {
+    width: 285px;
+    padding: 10px;
+  }
+  .video-register-wrapper {
+    justify-content: space-between;
+  }
+
+  .number span {
+    word-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .first-box {
+    margin-inline-start: 20px;
+    margin-inline-end: 20px;
+  }
+
+  .benefits {
+    margin: 10px 0;
+  }
+
+  .benefit span {
+    font-size: 12px;
+  }
+
+  .second-benefite-title .main-logo img {
+    width: 160px;
+    height: 145px;
+  }
+
+  .second-benefite-title .title span {
+    font-size: 19px;
+  }
+
+  .swiper-wrapper {
+    padding-inline-start: 10px;
+  }
+
+  .hamvakil-services {
+    /* height: 180px; */
+    padding: 10px 15px;
+  }
+
+  .logo {
+    width: 80px;
+    height: 80px;
+    margin-inline-start: 4px;
+    margin-inline-end: 4px;
+  }
+
+  .logo img {
+    height: 100px;
+  }
+
+  .hamvakil-logo img {
+    width: 160px;
+    margin-inline-start: 10px;
+  }
+
+  .image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .green-box {
+    padding-inline-start: 15px;
+    padding-inline-end: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 13px;
+  }
+
+  .green-box .image {
+    width: 50%;
+  }
+
+  .green-box .box {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .box {
+    width: 60%;
+  }
+
+  .header {
+    height: 50px;
+  }
+
+  .shape {
+    width: 210px;
+  }
+
+  .benefit span {
+    font-size: 12px;
+  }
+  .first-box .number span {
+    font-size: 20px;
+  }
+  .register button {
+    font-size: 22px;
+  }
+
+  /* .hamvakil-services {
+    height: 160px;
+  } */
+  .video-register-wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .video-register-wrapper .video:nth-child(2) {
+    order: -1;
+  }
+  .video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .main-video {
+    width: 390px;
+    padding: 6px;
+  }
+  .first-box {
+    width: 70%;
+    margin-top: 20px;
+  }
+
+  .register {
+    margin-top: 5px;
+  }
+  .swiper-wrapper {
+    padding-inline-start: 10px;
+  }
+
+  .benefite-title {
+    margin-top: 10px;
+  }
+
+  .second-benefite-title .main-logo img {
+    width: 130px;
+    height: 120px;
+  }
+
+  .second-benefite-title span {
+    font-size: 16px;
+  }
+
+  .hamvakil-logo {
+    display: none;
+  }
+
+  .second-benefite-title .title span {
+    font-size: 17px;
+  }
+
+  .number span {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .green-box {
+    padding-inline-start: 15px;
+    padding-inline-end: 15px;
+    height: 290px;
+  }
+
+  .green-box .image {
+    display: none;
+  }
+
+  .green-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .green-box .box {
+    width: 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  .second-benefite-title {
+    display: none;
+  }
+
+  .header {
+    height: 40px;
+  }
+
+  .shape {
+    width: 210px;
+  }
+  .first-box {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .first-box .texts {
+    font-size: 18px;
+  }
+  /* .main-video {
+    width: 310px;
+  } */
+  .benefite-title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .benefite-title span {
+    color: #ffffff;
+  }
+
+  .hamvakil-services {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+  }
+
+  .benefits {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    gap: 2px;
+  }
+
+  .benefit {
+    width: 70%;
+    height: 60px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 30px;
+  }
+
+  .benefit span {
+    font-size: 12px;
+  }
+
+  .hamvakil-services {
+    height: 330px;
+  }
+
+  .benefite-title {
+    height: 50px;
+  }
+
+  .benefite-title span {
+    font-size: 18px;
+  }
+
+  .box {
+    width: 82%;
+  }
+
+  .best-lawyers-title span {
+    font-size: 22px;
+  }
+
+  .card .name span {
+    font-size: 14px;
+  }
+
+  .number span {
+    font-size: 17px;
+  }
+
+  .detail-lawyer span {
+    font-size: 12px;
+  }
+  .detail-lawyer p {
+    font-size: 12px;
+  }
+
+  .swiper-slide .photo {
+    border: 6px solid rgb(204, 204, 204);
+    width: 118px;
+    height: 118px;
+    border-radius: 11px;
+  }
+
+  .swiper-slide .photo img {
+    width: 98%;
+    height: 97%;
+    padding: 4px;
+    object-fit: contain;
+  }
+
+  .swiper-wrapper {
+    padding-inline-start: 10px;
+  }
+
+  .register input {
+    height: 46px;
+  }
+
+  .register button {
+    height: 38px;
+    border-radius: 9px;
+    font-size: 22px;
+  }
+
+  .hamvakil-logo {
+    display: none;
+  }
+
+  .logoes,
+  .links-group {
+    width: 50%;
+  }
+
+  .logoes {
+    flex-wrap: wrap;
+  }
+
+  .logo {
+    width: 25%;
+  }
+
+  .logo {
+    width: 40%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .link a {
+    font-size: 12px;
+  }
+
+  .badge {
+    font-size: 13px;
+    /* width: 90px; */
+  }
+
+  .green-box {
+    height: 250px;
+    justify-content: center;
+  }
+
+  .green-box .image {
+    display: none;
+  }
+}
+
+@media (max-width: 360px) {
+  .header {
+    height: 30px;
+  }
+
+  .shape {
+    width: 112px;
+  }
+  .main-video {
+    width: 240px;
+    padding: 0px;
+    height: 240px;
+  }
+  .first-box {
+    width: 90%;
+    margin-top: 15px;
+  }
+
+  .benefite-title {
+    height: 48px;
+  }
+
+  .benefite-title span {
+    font-size: 16px;
+  }
+  .number {
+    height: 45px;
+  }
+  .benefit span {
+    font-size: 11px;
+  }
+
+  .hamvakil-services {
+    height: 320px;
+  }
+  .green-square {
+    width: 9px;
+    height: 9px;
+  }
+
+  .swiper-wrapper {
+    padding-inline-start: 10px;
+    margin-inline-start: 20px;
+  }
+
+  .number span {
+    font-size: 15px !important;
+  }
+
+  .register button {
+    font-size: 19px;
+  }
+
+  .register input {
+    width: 166px;
+  }
+
+  .box {
+    height: 150px;
+  }
+
+  .best-lawyers-title span {
+    font-size: 18px;
+  }
+
+  .card .name span {
+    font-size: 12px;
+  }
+
+  .detail-lawyer span {
+    font-size: 9px;
+    padding-top: 15px;
+  }
+
+  .card .name .circle {
+    width: 18px;
+    height: 18px;
+    background-color: #11b482;
+    border-radius: 50%;
+  }
+
+  .card .name .circle span {
+    color: #ffffff !important;
+    font-size: 15px;
+  }
+
+  .logo {
+    width: 40%;
+    height: 40%;
+  }
+
+  .logo img {
+    height: 80px;
+  }
+
+  .links-group .title {
+    margin-top: 30px;
+  }
+
+  .badge {
+    font-size: 11px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85px;
+  }
+
+  .link {
+    margin: 0;
+  }
+
+  .link a {
+    font-size: 9px;
+  }
+
+  .register {
+    margin-top: 0;
+  }
+}
